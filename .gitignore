@@ -15,3 +15,6 @@ dist/
 
 # Logs
 *.log
+
+# Keep original heavy videos local; commit compressed website versions instead
+site/assets/hero-video.mp4

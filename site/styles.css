@@ -89,7 +89,21 @@ h3 { font-size: 1.25rem; }
   background: var(--cream);
   box-shadow: 0 24px 70px rgba(38, 59, 50, .18);
 }
-.hero-image img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; }
+.hero-image img,
+.hero-image video {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-video { position: relative; }
+.hero-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(23,33,29,0) 55%, rgba(23,33,29,.16));
+}
 
 .section {
   padding: clamp(48px, 7vw, 96px) clamp(18px, 4vw, 56px);
