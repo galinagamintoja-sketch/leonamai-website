@@ -1,0 +1,17 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node/build folders if we convert to Astro/Next later
+node_modules/
+dist/
+.build/
+.next/
+.vercel/
+.env
+.env.*
+
+# Logs
+*.log
