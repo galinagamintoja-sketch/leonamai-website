@@ -18,3 +18,4 @@ dist/
 
 # Keep original heavy videos local; commit compressed website versions instead
 site/assets/hero-video.mp4
+docs/assets/hero-video.mp4
