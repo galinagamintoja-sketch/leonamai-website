@@ -3,81 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LEONAMAI.LT — Jūsų būsto remontas be chaoso</title>
-  <meta name="description" content="Jūsų būsto remontas be chaoso Vilniuje ir Vilniaus apskrityje. Tvarkingas darbas, aiški eiga, praktiški sprendimai." />
+  <title>LEONAMAI.LT - būsto remontas Vilniuje ir Vilniaus regione</title>
+  <meta name="description" content="Tvarkingas vonios, virtuvės ir buto remontas Vilniuje, Lentvaryje, Trakuose ir Vilniaus regione. Aiški sąmata, darbų eiga ir praktiški sprendimai." />
+  <link rel="icon" href="assets/leonamai-logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="topbar">
+    <a href="tel:+37063601230">0636 01230</a>
+    <span>Vilnius, Lentvaris, Trakai ir Vilniaus regionas</span>
+  </div>
+
   <header class="site-header">
-    <a class="logo" href="#top">LEONAMAI<span>.LT</span></a>
-    <nav>
+    <a class="brand" href="#top" aria-label="Leonamai.lt">
+      <img src="assets/leonamai-logo.svg" alt="" />
+      <span>LEONAMAI<span>.LT</span></span>
+    </a>
+    <nav aria-label="Pagrindinė navigacija">
       <a href="#paslaugos">Paslaugos</a>
       <a href="#darbai">Darbai</a>
       <a href="#procesas">Procesas</a>
       <a href="#duk">DUK</a>
-      <a href="#kontaktai">Kontaktai</a>
+      <a class="nav-cta" href="#kontaktai">Kontaktai</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">VILNIUS VILNIAUS APSKRITIS</p>
-        <h1>Jūsų būsto remontas be chaoso</h1>
-        <p class="lead">Atliekame praktiškus, tvarkingus remonto darbus: nuo griovimo ir paruošimo iki plytelių, apdailos ir galutinio sutvarkymo.</p>
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video-desktop" autoplay muted loop playsinline poster="assets/hero-video-frame.jpg">
+          <source src="assets/hero-video-web.mp4" type="video/mp4" />
+        </video>
+        <video class="hero-video-mobile" autoplay muted loop playsinline poster="assets/hero-video-mobile-frame.jpg">
+          <source src="assets/hero-video-mobile.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-panel">
+        <p class="eyebrow">Vonios, virtuvės ir buto remontas</p>
+        <h1>Vonios ir buto remontas Vilniaus regione</h1>
+        <p class="lead">Nuo pirmos apžiūros iki užbaigimo. Aiškiai sutariame darbų apimtį, kainą, medžiagas, terminus ir kas už ką atsakingas.</p>
         <div class="actions">
           <a class="button" href="tel:+37063601230">Skambinti: 0636 01230</a>
-          <a class="button ghost" href="#kainos">Kaip gausiu sąmatą?</a>
+          <a class="button secondary" href="#kainos">Gauti sąmatą</a>
         </div>
-        <ul class="trust-list">
-          <li>Aiški darbų apimtis prieš pradedant</li>
-          <li>Vonios, virtuvės ir buto remontas iš vienų rankų</li>
-          <li>Medžiagos, šiukšlės ir papildomi darbai aptariami iš anksto</li>
-        </ul>
+        <p class="hero-note">Greičiausia pradžia: atsiųskite 3-6 nuotraukas arba trumpą video ir parašykite objekto vietą.</p>
       </div>
-      <figure class="hero-image hero-video">
-        <video autoplay muted loop playsinline poster="assets/hero-video-frame.jpg" aria-label="Moderniai įrengtos vonios vaizdo įrašas">
-          <source src="assets/hero-video-web.mp4" type="video/mp4" />
-          <img src="assets/hero-bathroom.jpg" alt="Moderniai įrengta vonia su terrazzo plytelėmis ir medžio spalvos baldais" />
-        </video>
-      </figure>
+      <div class="hero-facts" aria-label="Kaip užsisakyti remontą">
+        <div><strong>01</strong><span>Parodote objektą</span><p>Nuotraukos, video arba apžiūra vietoje.</p></div>
+        <div><strong>02</strong><span>Gaunate aiškią apimtį</span><p>Darbai, medžiagos ir papildomos rizikos atskirai.</p></div>
+        <div><strong>03</strong><span>Sutariame kainą ir eigą</span><p>Mažiau netikėtumų remonto metu.</p></div>
+      </div>
     </section>
 
     <section class="section intro">
-      <div>
+      <div class="section-title">
         <p class="eyebrow">Pozicija</p>
-        <h2>Ne „gražūs pažadai“, o normalus statybinis darbas.</h2>
+        <h2>Tvarkingas statybinis darbas, ne tušti pažadai.</h2>
       </div>
-      <p>Leonamai.lt orientuojasi į žmones, kuriems reikia patikimo meistro ir aiškios remonto eigos. Padėsime įvertinti būklę, sudėlioti darbus pagal prioritetus ir rasti praktišką sprendimą pagal biudžetą — be tuščių pažadų ir miglotų „paskui susitarsim“ situacijų.</p>
+      <p>Leonamai.lt skirta žmonėms, kuriems reikia patikimo meistro ir aiškios remonto eigos. Padėsime įvertinti būklę, sudėlioti darbus pagal prioritetus ir rasti praktišką sprendimą pagal biudžetą.</p>
     </section>
 
     <section id="paslaugos" class="section services">
-      <p class="eyebrow">Paslaugos</p>
-      <h2>Ką galime padaryti</h2>
-      <div class="cards">
+      <div class="section-title">
+        <p class="eyebrow">Paslaugos</p>
+        <h2>Ką galime sutvarkyti</h2>
+      </div>
+      <div class="service-grid">
         <article>
+          <span>01</span>
           <h3>Vonios remontas</h3>
-          <p>Demontavimas, hidroizoliacija, plytelės, santechnikos paruošimas, dušo zonos, baldų ir įrangos montavimas.</p>
+          <p>Demontavimas, hidroizoliacija, plytelės, dušo zonos, santechnikos taškai, baldų ir įrangos montavimas.</p>
         </article>
         <article>
-          <h3>Buto apdaila iki baldų</h3>
-          <p>Sienų, grindų ir lubų paruošimas, gipskartonis, dažymas, grindų dangos, durys, grindjuostės ir smulkūs montavimo darbai.</p>
+          <span>02</span>
+          <h3>Buto apdaila</h3>
+          <p>Sienų, grindų ir lubų paruošimas, gipskartonis, dažymas, grindų dangos, durys ir grindjuostės.</p>
         </article>
         <article>
+          <span>03</span>
           <h3>Virtuvės paruošimas</h3>
-          <p>Elektros ir santechnikos taškų paruošimas, sienų bei grindų apdaila, plytelės ir sprendimai prieš baldų montavimą.</p>
+          <p>Elektros ir santechnikos taškai, sienų bei grindų apdaila, plytelės ir paruošimas baldų montavimui.</p>
         </article>
         <article>
+          <span>04</span>
           <h3>Plytelių klijavimas</h3>
-          <p>Tikslūs mazgai, kampai, siūlės, nuolydžiai ir detalės, kurios lemia ar rezultatas atrodys tvarkingai ir laikys ilgai.</p>
+          <p>Tikslūs kampai, siūlės, nuolydžiai ir mazgai, nuo kurių priklauso ilgaamžiškas rezultatas.</p>
         </article>
         <article>
+          <span>05</span>
           <h3>Smulkūs statybos darbai</h3>
           <p>Pertvaros, nišos, taisymai, paruošimai ir kiti darbai, kuriuos patogu sutvarkyti kartu su remontu.</p>
         </article>
         <article>
+          <span>06</span>
           <h3>Praktinė konsultacija</h3>
-          <p>Jeigu dar nežinote nuo ko pradėti, padėsime susidėlioti darbų seką, prioritetus ir realistišką biudžetą.</p>
+          <p>Jeigu dar nežinote nuo ko pradėti, padėsime sudėlioti darbų seką, prioritetus ir realistišką biudžetą.</p>
         </article>
       </div>
     </section>
@@ -85,68 +105,105 @@
     <section id="kainos" class="section estimate">
       <div class="section-title">
         <p class="eyebrow">Sąmata be spėlionių</p>
-        <h2>Pirmiausia aiški apimtis, tada kaina.</h2>
+        <h2>Pirma aiški apimtis, tada kaina.</h2>
       </div>
       <div class="estimate-grid">
-        <article class="estimate-card strong">
-          <h3>Ką atsiųsti greitam įvertinimui?</h3>
-          <ul>
-            <li>3–6 nuotraukas arba trumpą video</li>
-            <li>Objekto vietą ir patalpos dydį</li>
-            <li>Ką norite keisti: plytelės, santechnika, elektra, grindys, sienos</li>
-            <li>Ar reikia medžiagų, šiukšlių išvežimo ir pilno užbaigimo</li>
-          </ul>
-        </article>
-        <article class="estimate-card">
-          <h3>Kas bus įtraukta į pasiūlymą</h3>
-          <p>Darbų sąrašas, preliminari eiga, kas įeina ir kas neįeina į kainą. Jei matome riziką — senas vamzdynas, nelygios sienos, drėgmė ar paslėpti defektai — pasakome iš karto.</p>
-        </article>
-        <article class="estimate-card">
-          <h3>Kur galima sutaupyti</h3>
-          <p>Patarsime, kur verta rinktis paprastesnį sprendimą, o kur taupyti pavojinga: hidroizoliacija, nuolydžiai, elektros ir santechnikos mazgai.</p>
-        </article>
+        <div class="estimate-copy">
+          <p>Tiksli remonto kaina priklauso nuo objekto būklės, pasirinktų medžiagų, darbų apimties ir paslėptų rizikų. Todėl prieš skaičiuojant kainą verta aiškiai atsakyti į kelis praktinius klausimus.</p>
+          <a class="button" href="tel:+37063601230">Pasitarti telefonu</a>
+        </div>
+        <ul class="check-list">
+          <li>3-6 nuotraukos arba trumpas video</li>
+          <li>Objekto vieta ir patalpos dydis</li>
+          <li>Ką reikia keisti: plyteles, santechniką, elektrą, grindis ar sienas</li>
+          <li>Ar į kainą turi įeiti medžiagos, šiukšlių išvežimas ir pilnas užbaigimas</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section proof">
-      <p class="eyebrow">Kodėl klientams tai svarbu</p>
-      <h2>Remonte daugiausia kainuoja ne tik darbas — kainuoja neaiškumas.</h2>
-      <div class="proof-list">
-        <div><strong>Aiški pradžia</strong><span>Prieš startą sutariame darbų seką ir atsakomybes.</span></div>
+    <section class="section proof-strip">
+      <div class="section-title">
+        <p class="eyebrow">Kodėl verta tartis</p>
+        <h2>Remonte daugiausia kainuoja ne tik darbas, bet ir neaiškumas.</h2>
+      </div>
+      <div class="proof-grid">
+        <div><strong>Aiški pradžia</strong><span>Prieš startą sutariame darbų seką, apimtį ir atsakomybes.</span></div>
         <div><strong>Tvarka objekte</strong><span>Medžiagos, šiukšlės ir logistika aptariami iš anksto.</span></div>
-        <div><strong>Praktiški sprendimai</strong><span>Siūlome variantus pagal biudžetą, ne tik brangiausią kelią.</span></div>
+        <div><strong>Praktiški sprendimai</strong><span>Patariame, kur verta investuoti, o kur galima paprasčiau.</span></div>
         <div><strong>Vienas kontaktas</strong><span>Patogiau, kai vonios, virtuvės ir apdailos darbai derinami vienoje vietoje.</span></div>
       </div>
     </section>
 
     <section id="darbai" class="section work">
       <div class="section-title">
-        <p class="eyebrow">Darbų pavyzdžiai</p>
-        <h2>Švarus, modernus vonios ir apdailos stilius</h2>
+        <p class="eyebrow">Atlikti darbai</p>
+        <h2>Realūs vonios ir apdailos darbų pavyzdžiai</h2>
       </div>
-      <div class="gallery">
-        <img src="assets/bathroom-1.jpg" alt="Vonios kambario apdailos darbų pavyzdys" />
-        <img src="assets/bathroom-2.jpg" alt="Vonios kambario plytelių ir įrangos pavyzdys" />
-        <img src="assets/tiling-detail.jpg" alt="Plytelių klijavimo detalė" />
-        <img src="assets/before-work.jpg" alt="Remonto darbų pradžios ir paruošimo etapas" />
+      <div class="project-grid">
+        <article class="project-card large">
+          <img src="assets/project-vanity.jpg" alt="Įrengta vonios praustuvo zona su veidrodžiu ir terrazzo plytelėmis" />
+          <div>
+            <p>Vonios remontas</p>
+            <h3>Praustuvas, apšvietimas ir apdailos detalės</h3>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/project-finished-bath.jpg" alt="Užbaigtas mažos vonios kambario remontas" />
+          <div>
+            <p>Užbaigimas</p>
+            <h3>Maža vonia su pilnai įrengta zona</h3>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/project-shower.jpg" alt="Dušo zona su stiklo pertvara ir medžio imitacijos plytelėmis" />
+          <div>
+            <p>Dušo zona</p>
+            <h3>Stiklas, juodi profiliai ir medžio tonai</h3>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/project-hooks.jpg" alt="Vonios kabliukų ir terrazzo plytelių detalė" />
+          <div>
+            <p>Detalės</p>
+            <h3>Smulkūs montavimo darbai ir apdaila</h3>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/project-shower-detail.jpg" alt="Juoda dušo galvutė prie medžio imitacijos plytelių" />
+          <div>
+            <p>Santechnika</p>
+            <h3>Dušo įranga ir švarūs mazgai</h3>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/project-before.jpg" alt="Vonios remonto pradžios etapas su paruošta patalpa" />
+          <div>
+            <p>Darbų eiga</p>
+            <h3>Paruošimas prieš pilną apdailą</h3>
+          </div>
+        </article>
       </div>
-      <p class="note">Pastaba: pirmai versijai naudojame tik atrinktą stipresnę medžiagą. Ateityje verta nufotografuoti daugiau švarių galutinių kadrų ir tikras prieš/po poras.</p>
+      <p class="note">Galerijoje rodome tik stipresnius kadrus. Dar geresnei viešai versijai verta papildomai nufotografuoti objektus horizontaliai, be įrankių, rankšluosčių, lipdukų ir atvirų laidų.</p>
     </section>
 
     <section id="procesas" class="section process">
-      <p class="eyebrow">Procesas</p>
-      <h2>Kaip pradedame</h2>
+      <div class="section-title">
+        <p class="eyebrow">Procesas</p>
+        <h2>Kaip pradedame</h2>
+      </div>
       <ol>
         <li><strong>Apžiūra arba nuotraukos.</strong> Įvertiname būklę, norimą rezultatą ir pagrindines rizikas.</li>
-        <li><strong>Darbų apimtis.</strong> Aiškiai atskiriame, kas įeina į kainą: darbai, medžiagos, išvežimas, papildomi darbai.</li>
-        <li><strong>Remontas.</strong> Dirbame etapais, kad būtų mažiau netikėtumų ir daugiau kontrolės.</li>
+        <li><strong>Darbų apimtis.</strong> Atskirai sutariame darbus, medžiagas, išvežimą ir papildomus darbus.</li>
+        <li><strong>Remontas etapais.</strong> Dirbame taip, kad būtų mažiau netikėtumų ir daugiau kontrolės.</li>
         <li><strong>Užbaigimas.</strong> Patikriname detales ir paliekame tvarkingą rezultatą.</li>
       </ol>
     </section>
 
     <section id="duk" class="section faq">
-      <p class="eyebrow">DUK</p>
-      <h2>Dažniausi klausimai prieš remontą</h2>
+      <div class="section-title">
+        <p class="eyebrow">DUK</p>
+        <h2>Dažniausi klausimai prieš remontą</h2>
+      </div>
       <div class="faq-grid">
         <details open>
           <summary>Ar galite padaryti tik vonios remontą?</summary>
@@ -154,7 +211,7 @@
         </details>
         <details>
           <summary>Ar kaina gali būti pasakyta iš nuotraukų?</summary>
-          <p>Iš nuotraukų galima duoti orientaciją. Tikslesnei sąmatai reikia aiškios darbų apimties arba apžiūros, nes paslėpti defektai labai keičia kainą.</p>
+          <p>Iš nuotraukų galima duoti orientaciją. Tikslesnei sąmatai reikia aiškios darbų apimties arba apžiūros.</p>
         </details>
         <details>
           <summary>Ar dirbate su medžiagomis?</summary>
@@ -171,18 +228,19 @@
       <div>
         <p class="eyebrow">Kontaktai</p>
         <h2>Reikia įvertinti remontą?</h2>
-        <p>Atsiųskite nuotraukas arba video, trumpą aprašymą ir vietą. Atsakysime, ką verta daryti pirmiausia, kokios apimties darbų tikėtis ir kokių klausimų dar reikia tiksliai sąmatai.</p>
+        <p>Atsiųskite nuotraukas arba video, trumpą aprašymą ir vietą. Atsakysime, ką verta daryti pirmiausia ir kokių klausimų dar reikia tiksliai sąmatai.</p>
       </div>
-      <div class="contact-card">
-        <p><strong>Valentin</strong></p>
+      <address>
+        <strong>Valentin</strong>
         <a href="tel:+37063601230">0636 01230</a>
-        <p>Vilnius, Lentvaris ir Vilniaus regionas</p>
-      </div>
+        <span>Vilnius, Lentvaris, Trakai ir Vilniaus regionas</span>
+      </address>
     </section>
   </main>
 
   <footer>
-    <p>© Leonamai.lt — remonto ir apdailos darbai Vilniaus regione.</p>
+    <span>© Leonamai.lt</span>
+    <span>Remonto ir apdailos darbai Vilniaus regione</span>
   </footer>
 </body>
 </html>
