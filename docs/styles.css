@@ -637,21 +637,22 @@ footer {
     display: block;
     min-height: auto;
     padding: 0;
-    background: #0d1815;
+    background: var(--forest);
     color: #fff;
   }
 
   .hero-media {
     position: relative;
-    height: min(62vh, 560px);
-    min-height: 430px;
+    height: clamp(430px, 70vh, 620px);
+    min-height: 0;
     overflow: hidden;
+    background: #0d1815;
   }
 
   .hero-media::after {
     background:
-      linear-gradient(180deg, rgba(13, 24, 21, .16) 0%, rgba(13, 24, 21, 0) 34%),
-      linear-gradient(0deg, rgba(13, 24, 21, .88) 0%, rgba(13, 24, 21, .22) 32%, rgba(13, 24, 21, 0) 58%);
+      linear-gradient(180deg, rgba(13, 24, 21, .1) 0%, rgba(13, 24, 21, 0) 30%),
+      linear-gradient(0deg, rgba(13, 24, 21, .32) 0%, rgba(13, 24, 21, 0) 34%);
   }
 
   .hero-media video {
@@ -659,10 +660,11 @@ footer {
   }
 
   .hero-panel {
-    padding: 0 18px 22px;
-    margin-top: -132px;
+    padding: 24px 18px 22px;
+    margin-top: 0;
     max-width: none;
-    text-shadow: 0 2px 18px rgba(0, 0, 0, .45);
+    background: var(--forest);
+    text-shadow: none;
   }
 
   .hero .eyebrow {
@@ -691,12 +693,14 @@ footer {
   }
 
   .hero-note {
+    color: rgba(255, 255, 255, .78);
     font-size: .9rem;
   }
 
   .hero-facts {
-    padding: 0 18px 26px;
+    padding: 0 18px 28px;
     margin-top: 0;
+    background: var(--forest);
   }
 
   .service-grid,
