@@ -44,14 +44,14 @@
         <p class="lead">Nuo pirmos apžiūros iki užbaigimo. Aiškiai sutariame darbų apimtį, kainą, medžiagas, terminus ir kas už ką atsakingas.</p>
         <div class="actions">
           <a class="button" href="tel:+37063601230">Skambinti: 0636 01230</a>
-          <a class="button secondary" href="#kainos">Gauti sąmatą</a>
+          <a class="button secondary" href="#kontaktai">Gauti sąmatą</a>
         </div>
         <p class="hero-note">Greičiausia pradžia: atsiųskite 3-6 nuotraukas arba trumpą video ir parašykite objekto vietą.</p>
       </div>
       <div class="hero-facts" aria-label="Kaip užsisakyti remontą">
-        <div><strong>01</strong><span>Parodote objektą</span><p>Nuotraukos, video arba apžiūra vietoje.</p></div>
-        <div><strong>02</strong><span>Gaunate aiškią apimtį</span><p>Darbai, medžiagos ir papildomos rizikos atskirai.</p></div>
-        <div><strong>03</strong><span>Sutariame kainą ir eigą</span><p>Mažiau netikėtumų remonto metu.</p></div>
+        <div><strong>1</strong><span>Parodote objektą</span><p>Nuotraukos, video arba apžiūra vietoje.</p></div>
+        <div><strong>2</strong><span>Gaunate aiškią apimtį</span><p>Darbai, medžiagos ir papildomos rizikos atskirai.</p></div>
+        <div><strong>3</strong><span>Sutariame kainą ir eigą</span><p>Mažiau netikėtumų remonto metu.</p></div>
       </div>
     </section>
 
@@ -70,32 +70,32 @@
       </div>
       <div class="service-grid">
         <article>
-          <span>01</span>
+          <span>1</span>
           <h3>Vonios remontas</h3>
           <p>Demontavimas, hidroizoliacija, plytelės, dušo zonos, santechnikos taškai, baldų ir įrangos montavimas.</p>
         </article>
         <article>
-          <span>02</span>
+          <span>2</span>
           <h3>Buto apdaila</h3>
           <p>Sienų, grindų ir lubų paruošimas, gipskartonis, dažymas, grindų dangos, durys ir grindjuostės.</p>
         </article>
         <article>
-          <span>03</span>
+          <span>3</span>
           <h3>Virtuvės paruošimas</h3>
           <p>Elektros ir santechnikos taškai, sienų bei grindų apdaila, plytelės ir paruošimas baldų montavimui.</p>
         </article>
         <article>
-          <span>04</span>
+          <span>4</span>
           <h3>Plytelių klijavimas</h3>
           <p>Tikslūs kampai, siūlės, nuolydžiai ir mazgai, nuo kurių priklauso ilgaamžiškas rezultatas.</p>
         </article>
         <article>
-          <span>05</span>
+          <span>5</span>
           <h3>Smulkūs statybos darbai</h3>
           <p>Pertvaros, nišos, taisymai, paruošimai ir kiti darbai, kuriuos patogu sutvarkyti kartu su remontu.</p>
         </article>
         <article>
-          <span>06</span>
+          <span>6</span>
           <h3>Praktinė konsultacija</h3>
           <p>Jeigu dar nežinote nuo ko pradėti, padėsime sudėlioti darbų seką, prioritetus ir realistišką biudžetą.</p>
         </article>
@@ -241,6 +241,10 @@
       </div>
       <div class="faq-grid">
         <details open>
+          <summary>Kiek kainuoja vonios ar buto remontas?</summary>
+          <p>Vonios remontas paprastai kainuoja nuo 1 500 iki 4 500 €, priklausomai nuo ploto, plytelių pasirinkimo ir santechnikos apimties. Buto pilnas remontas — nuo 3 000 €. Tiksli suma paaiškėja po apimties suderinimo, nes kaina priklauso nuo konkretaus objekto būklės ir medžiagų.</p>
+        </details>
+        <details open>
           <summary>Ar galite padaryti tik vonios remontą?</summary>
           <p>Taip. Vonios yra vienas pagrindinių darbų: paruošimas, hidroizoliacija, plytelės, santechnikos taškai, dušo zona ir montavimas.</p>
         </details>
@@ -268,8 +272,27 @@
       <address>
         <strong>Valentin</strong>
         <a href="tel:+37063601230">0636 01230</a>
+        <a class="email-link" href="mailto:Valentinleonavicius@gmail.com">Valentinleonavicius@gmail.com</a>
         <span>Vilnius, Lentvaris, Trakai ir Vilniaus regionas</span>
       </address>
+      <form class="contact-form" action="https://formsubmit.co/Valentinleonavicius@gmail.com" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="Nauja užklausa iš Leonamai.lt" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <label>
+          Vardas
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          Telefonas arba el. paštas
+          <input type="text" name="contact" autocomplete="tel" required />
+        </label>
+        <label>
+          Žinutė
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="button" type="submit">Siųsti užklausą</button>
+      </form>
     </section>
   </main>
 
@@ -277,5 +300,9 @@
     <span>© Leonamai.lt</span>
     <span>Remonto ir apdailos darbai Vilniaus regione</span>
   </footer>
+  <a class="mobile-call-bar" href="tel:+37063601230" aria-label="Skambinti Leonamai telefonu 0636 01230">
+    <span aria-hidden="true">☎</span>
+    <span>Skambinti: 0636 01230</span>
+  </a>
 </body>
 </html>

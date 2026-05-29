@@ -546,7 +546,64 @@ address a {
   text-decoration: none;
 }
 
+address .email-link {
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+  font-weight: 850;
+}
+
 address span { color: var(--muted); }
+
+.contact-form {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--forest);
+  font-size: .86rem;
+  font-weight: 900;
+}
+
+.contact-form label:last-of-type {
+  grid-column: 1 / -1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 13px;
+  color: var(--ink);
+  background: var(--paper);
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 3px solid rgba(191, 116, 72, .24);
+  border-color: var(--accent);
+}
+
+.contact-form .button {
+  width: fit-content;
+  border: 0;
+  cursor: pointer;
+}
 
 footer {
   display: flex;
@@ -561,8 +618,13 @@ footer {
   .hero-facts,
   .intro,
   .estimate-grid,
+  .contact-form,
   .contact {
     grid-template-columns: 1fr;
+  }
+
+  .contact-form label:last-of-type {
+    grid-column: auto;
   }
 
   .service-grid,
